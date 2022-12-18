@@ -1,5 +1,6 @@
 """
-Personal Python Module
+Personal Python Module(Lib)
+These programs are saved in a folder named Lib of user
 """
 from Lib.main import *
 def __init__():
