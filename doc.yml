@@ -1,0 +1,5 @@
+version:0.3.4
+python:
+    version:3.6.6
+    install:
+        -requirements:python>=3
