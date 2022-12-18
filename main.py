@@ -93,11 +93,3 @@ class notation:
         else:
             div= int(notalist[1])/ int(notalist[2])
             print(div)
-
-__doc__= {"__init__": __init__, "__name__":__name__, "new":new, "numlist":numlist, 
-"sym":sym, "lg":lg, "new_math":new_math,"new_math.round":new_math.round,
-"new_math.cbrt": new_math.cbrt, "new_math.logadd": new_math.logadd, 
-"new_math.logsub": new_math.logsub, "new_math.__init__": new_math.__init__, 
-"matrix": matrix, "matrix.matrix": matrix.matrix, "matrix.mat_trans": matrix.mat_trans, 
-"matrix.determin": matrix.determin, "matrix.__init__": matrix.__init__, 
-"notation": notation, "notation.prefix": notation.prefix, "notation.postfix": notation.postfix}
