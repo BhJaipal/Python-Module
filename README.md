@@ -1,6 +1,6 @@
 # Personal-Python-Module(Lib)
 
-> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/__init__)
+> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/__init__.py)
 > 
 > Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/main.py) for functions of Personal-Python-Module
 > 
