@@ -1,17 +1,17 @@
 # Personal-Python-Module(Lib)
 
-> Check [Lib.__init__](content://media/external/file/1000053158)
+> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/__init__)
 > 
-> Open [Lib.main](content://media/external/file/1000053155) for functions of Personal-Python-Module
+> Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/main.py) for functions of Personal-Python-Module
 > 
-> [Lib.setup](content://media/external/file/1000053152)
-## Lib.__init__
+> [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/setup.py)
+## __init__.py
 > __init__
 > new
 > name
 > __doc__
 
-## Lib.main
+## main.py
 
 | new_math |matrix | notation |
 |-------|----------|---------|
@@ -20,11 +20,13 @@
 | logadd | determin   |       |
 | logsub |     |       |
 
-## Lib.setup
+## setup.py
 
 This is setup file
 
 # About
 > This is a Personal python module created by Jaipal Bhanwariya.
-> To access it as a module, save it your python library folder.
+
+> To access it as a module,create a folder named Lib with these save it your python library folder.
+
 > Then open interpreter and import this file.
