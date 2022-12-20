@@ -86,7 +86,7 @@ it will print their ceiling value
 ```
 
 ### determin
-** This function is for getting determinant of a matrix form of list, tuple or set**
+**This function is for getting determinant of a matrix form of list, tuple or set**
 
 ```
 >>>from Lib.main import *
