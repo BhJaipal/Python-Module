@@ -5,6 +5,8 @@
 > Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/main.py) for functions of Personal-Python-Module
 > 
 > [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/setup.py)
+> 
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/main_doc.md) for main
 ## __init__.py
 > __init__
 > 
