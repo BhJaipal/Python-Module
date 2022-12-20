@@ -7,8 +7,11 @@
 > [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/setup.py)
 ## __init__.py
 > __init__
+> 
 > new
+> 
 > name
+> 
 > __doc__
 
 ## main.py
