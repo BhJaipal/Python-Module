@@ -59,18 +59,67 @@ it will print their ceiling value
 ```
 
 ### About New_Math
-**It is a attribute of Lib.main, it made for fulfillment of requirements, programmers require in math module**
+**It is an attribute of Lib.main, it made for fulfillment of requirements, programmers require in math module**
 
 ## Matrix
 
-### matrix
-**This function is for getting matrix form of a list, tuple, and sets**
+### Matrix
+**This function is for getting matrix form of a list, tuple, or sets**
 
 ```
 >>>from Lib.main import *
->>>matrix.matrix([2,5,7],[3,2,6],[4,7,2]]
+>>>matrix.matrix([[2,5,7],[3,2,6],[4,7,2]])
 2 5 7
 3 2 6
 4 7 2
 ```
 
+### Mat_trans
+**This function is for getting transpose of matrix form of list, tuple or set**
+
+```
+>>>from Lib.main import *
+>>>matrix.mat_trans([[2,5,7],[3,2,6],[4,7,2]])
+2 3 4
+5 2 7
+7 6 2
+```
+
+### determin
+** This function is for getting determinant of a matrix form of list, tuple or set**
+
+```
+>>>from Lib.main import *
+>>>matrix.determin([[2,5,7],[3,2,6],[4,7,2]])
+105
+```
+
+### About Matrix 
+**Matrix is an attribute of Lib.main, it is for making matrix, transpose of matrix and determinant of list, tuple or set**
+
+## Notation
+
+### Prefix 
+**This function is for getting solution of a given Prefix format question, question should be given in string data type**
+
+```
+>>>from Lib.main import *
+>>>notation.prefix("+25")
+7
+>>>notation.prefix("/93")
+3
+```
+
+### Postfix
+**This function is for getting solution of a given Postfix format question, question should be given in string data type**
+
+```
+>>>from Lib.main import *
+>>>notation.postfix("97-")
+2
+>>>notation.postfix("23*")
+6
+```
+
+### About Notation
+**Notation is an attribute of Lib.main, it is made getting solution of questions given in Prefix or Postfix form but it can used for only 2 integers**
