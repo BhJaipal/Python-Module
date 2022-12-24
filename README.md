@@ -7,6 +7,10 @@
 > [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/setup.py)
 > 
 > [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Main_doc.md) for main
+> 
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Main_doc.ipynb) for main in Jupyter notebook
+> 
+> [Readme](https://github.com/BhJaipal/Personal-python-module/blob/main/README.md) in Jupyter notebook
 
 ## __init__.py
 > __init__
