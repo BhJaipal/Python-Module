@@ -10,7 +10,7 @@
 > 
 > [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Main_doc.ipynb) for main in Jupyter notebook
 > 
-> [Readme](https://github.com/BhJaipal/Personal-python-module/blob/main/README.md) in Jupyter notebook
+> [Readme](https://github.com/BhJaipal/Personal-python-module/blob/main/Readme.ipynb) in Jupyter notebook
 
 ## __init__.py
 > __init__
