@@ -1,16 +1,14 @@
 # Personal-Python-Module(Lib)
 
-> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/__init__.py)
+> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/__init__.py)
 > 
-> Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/main.py) for functions of Personal-Python-Module
+> Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/main.py) for functions of Personal-Python-Module
 > 
-> [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/setup.py)
+> [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/setup.py)
 > 
-> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Main_doc.md) for main
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/Main_doc.md) for main
 > 
-> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Main_doc.ipynb) for main in Jupyter notebook
-> 
-> [Readme](https://github.com/BhJaipal/Personal-python-module/blob/main/Readme.ipynb) in Jupyter notebook
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/Main_doc.ipynb) for main in Jupyter notebook
 
 ## __init__.py
 > __init__
