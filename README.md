@@ -1,4 +1,8 @@
 # Personal-Python-Module(Lib)
+<p align="center">
+<img src="https://img.shields.io/github/last-commit/BhJaipal/Personal-Python-Module">
+<img src="https://img.shields.io/github/contributors/BhJaipal/Personal-Python-Module">
+</p>
 
 > Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/__init__.py)
 > 
