@@ -153,18 +153,57 @@ class notation:
     
     def prefix(nota1):
         notalist =list(nota1)
-        if notalist[0] == sym[0]:
-            sum=int(notalist[1]) + int(notalist[2])      # +ab = a+b
-            print (sum)
-        elif notalist[0] == sym[1]:
-            sub= int(notalist[1])- int(notalist[2])      # -ab = a-b
-            print(sub)
-        elif notalist[0] == sym[2]:
-            mul= int(notalist[1])* int(notalist[2])      # *ab = a*b
-            print(mul)
-        elif notalist[0] == sym[4]:
-            Mod= int(notalist[1])% int(notalist[2])      # %ab = a%b
-            print(Mod)
-        else:
-            div= int(notalist[1])/ int(notalist[2])      # /ab = a/b
-            print(div)
+        if len(notalist)==3:
+            if notalist[0] == sym[0]:
+                sum=int(notalist[1]) + int(notalist[2])      # +ab = a+b
+                print (sum)
+            elif notalist[0] == sym[1]:
+                sub= int(notalist[1])- int(notalist[2])      # -ab = a-b
+                print(sub)
+            elif notalist[0] == sym[2]:
+                mul= int(notalist[1])* int(notalist[2])      # *ab = a*b
+                print(mul)
+            elif notalist[0] == sym[4]:
+                Mod= int(notalist[1])% int(notalist[2])      # %ab = a%b
+                print(Mod)
+            else:
+                div= int(notalist[1])/ int(notalist[2])      # /ab = a/b
+                print(div)
+        if len(notalist)==7:
+            # for 1st prefix
+            if notalist[1]=="+":
+                calc1= int(notalist[2]) + int(notalist[3])
+            elif notalist[1]=="-":
+                calc1= int(notalist[2]) - int(notalist[3])
+            elif notalist[1]=="*":
+                calc1= int(notalist[2]) * int(notalist[3])
+            elif notalist[1]=="/":
+                calc1= int(notalist[2]) / int(notalist[3])
+            else:
+                calc1= int(notalist[2]) % int(notalist[3])
+            # 1st prefix is done
+            # now, for second prefix
+            if notalist[4]== "+":
+                calc2= int(notalist[5]) + int(notalist[6])
+            elif notalist[4]== "-":
+                calc2= int(notalist[5]) - int(notalist[6])
+            elif notalist[4]== "*":
+                calc2= int(notalist[5]) * int(notalist[6])
+            elif notalist[4]=="/":
+                calc2= int(notalist[5]) / int(notalist[6])
+            else:
+                calc2= int(notalist[5]) % int(notalist[6])
+            # 2nd prefix is also done
+            # now for main prefix
+            if notalist[0]=="+":
+                result= calc1 + calc2
+            elif notalist[0]=="-":
+                result= calc1 - calc2
+            elif notalist[0]=="*":
+                result= calc1 * calc2
+            elif notalist[0]=="/":
+                result= calc1 / calc2
+            else:
+                result= calc1 % calc2
+            return result
+                                                                                                                                                                                                                                        
