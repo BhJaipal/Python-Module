@@ -152,6 +152,57 @@ class notation:
                 div= int(notalist[0])/ int(notalist[1])       # ab/ = a/b
                 print (div)
         
+        if len(notalist) == 5:
+            if notalist[2] in list("+-*%/"):
+                # solving 1st postfix
+                if notalist[2] == "+":
+                    solv= int(notalist[0]) + int(notalist[1])
+                elif notalist[2] == "-":
+                    solv= int(notalist[0]) - int(notalist[1])
+                elif notalist[2] == "*":
+                    solv= int(notalist[0]) * int(notalist[1])
+                elif notalist[2] == "%":
+                    solv= int(notalist[0]) % int(notalist[1])
+                else:
+                    solv= int(notalist[0]) / int(notalist[1])
+                # solving main postfix
+                if notalist[4] == "+":
+                    solution= solv + int(notalist[3])
+                elif notalist[4] == "-":
+                    solution= solv - int(notalist[3])
+                elif notalist[4] == "*":
+                    solution= solv * int(notalist[3])
+                elif notalist[4] == "/":
+                    solution= solv / int(notalist[3])
+                else:
+                    solution= solv % int(notalist[3])
+                return solution
+            elif notalist[3] in list("+-*%/"):
+                if notalist[3] == "+":
+                    solv= int(notalist[1]) + int(notalist[2])
+                elif notalist[3] == "-":
+                    solv= int(notalist[1]) - int(notalist[2])
+                elif notalist[3] == "*":
+                    solv= int(notalist[1]) * int(notalist[2])
+                elif notalist[3] == "/":
+                    solv= int(notalist[1]) / int(notalist[2])
+                else:
+                    solv= int(notalist[1]) % int(notalist[2])
+                # solving main postfix
+                if notalist[4] == "+":
+                    solution = int(notalist[0]) + solv
+                elif notalist[4] == "-":
+                    solution = int(notalist[0]) - solv 
+                elif notalist[4] == "*":
+                    solution = int(notalist[0]) * solv 
+                elif notalist[4] == "/":
+                    solution = int(notalist[0]) / solv 
+                else:
+                    solution = int(notalist[0]) % solv 
+                return solution
+            else:
+                return "Please enter correct equation in abc*/ format or ab*c/, you can use */+-%"
+
         if len(notalist) == 7:
             # for 1st postfix
             if notalist[2]=="+":
