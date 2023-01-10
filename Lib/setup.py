@@ -4,8 +4,8 @@ def readme():
         print(read.read())
 
 setuptools.setup(
-name= "lib",
-version="0.3.4",
+name= "Lib",
+version="0.3.9",
 author="Jaipal Bhanwariya",
 author_email="jaipalbhanwariya001@gmail.com",
 description="This is a Personal Python Module created by Jaipal. It is only accessible to Jaipal. Download this zip file and extract where your python libraries are present and you can access it too by using 'import Lib'",

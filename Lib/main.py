@@ -7,7 +7,7 @@ Personal Python Module
 def __init__():
     return "This is a Python file used as a personal python module "
 def new():
-    return "Prefix and Postfix notation are not complete and can only used for 2 and 4 integers"
+    return "Prefix and Postfix notation are now complete"
 
 """
 Use of New_Math class
@@ -123,29 +123,39 @@ Used to calculate a prefix equation for 2 integers
 >>> from Lib.main import *
 >>> notation.prefix("*23")
 6
+>>> notation.prefix("/+235")
+1
+>>> notation.prefix("/9*52")
+0.9
+>>> notation.prefix("/*26*34")
+1
 
 Use of postfix() function
 Used to calculate postfix equation
 >>> notation.postfix("94%")
 1
+>>> notation.postfix("23*5%")
+1
+>>> notation.postfix("952*/")
+0.9
+>>> notation.postfix("26*34*/")
+1
 """
 
-numlist=list("1234567890")
-sym=list("+-*/%")
 class notation:
     def postfix(nota1):
         notalist=list(nota1)
         if len(notalist) == 3:
-            if notalist[2] == sym[0]:
+            if notalist[2] == "+":
                 sum= int(notalist[0])+ int(notalist[1])       # ab+ = a+b
                 print (sum)
-            elif notalist[2] == sym[1]:
+            elif notalist[2] == "-":
                 sub= int(notalist[0])- int(notalist[1])       # ab- = a-b
                 print(sub)
-            elif notalist [2] == sym[2]:
+            elif notalist [2] == *:
                 mul= int(notalist[0])* int(notalist[1])       # ab* = a*b
                 print (mul)
-            elif notalist [2] == sym[4]:
+            elif notalist [2] == "%":
                 Mod= int(notalist[0])% int(notalist[1])       # ab% = a%b
                 print(Mod)
             else:
@@ -154,6 +164,9 @@ class notation:
         
         if len(notalist) == 5:
             if notalist[2] in list("+-*%/"):
+                """
+                equation for this is ab*c/ = (a*b)/c, you can use +-*/% operators 
+                """
                 # solving 1st postfix
                 if notalist[2] == "+":
                     solv= int(notalist[0]) + int(notalist[1])
@@ -176,8 +189,11 @@ class notation:
                     solution= solv / int(notalist[3])
                 else:
                     solution= solv % int(notalist[3])
-                return solution
+                print(solution)
             elif notalist[3] in list("+-*%/"):
+                """
+                equation for this is abc*/ = a/(b*c), you can use +-*/% operators 
+                """
                 if notalist[3] == "+":
                     solv= int(notalist[1]) + int(notalist[2])
                 elif notalist[3] == "-":
@@ -199,11 +215,14 @@ class notation:
                     solution = int(notalist[0]) / solv 
                 else:
                     solution = int(notalist[0]) % solv 
-                return solution
+                print(solution)
             else:
                 return "Please enter correct equation in abc*/ format or ab*c/, you can use */+-%"
 
         if len(notalist) == 7:
+            """
+            equation for this is ab*cd*/ = (a*b)/(c*d), you can use +-*/% operators
+            """
             # for 1st postfix
             if notalist[2]=="+":
                 calc1= int(notalist[0]) + int(notalist[1])
@@ -239,21 +258,21 @@ class notation:
                 result= calc1 / calc2
             else:
                 result= calc1 % calc2
-            return result
+            print(result)
     
     def prefix(nota1):
         notalist =list(nota1)
         if len(notalist) == 3:
-            if notalist[0] == sym[0]:
+            if notalist[0] == "+":
                 sum=int(notalist[1]) + int(notalist[2])      # +ab = a+b
                 print (sum)
-            elif notalist[0] == sym[1]:
+            elif notalist[0] == "-":
                 sub= int(notalist[1])- int(notalist[2])      # -ab = a-b
                 print(sub)
-            elif notalist[0] == sym[2]:
+            elif notalist[0] == "*":
                 mul= int(notalist[1])* int(notalist[2])      # *ab = a*b
                 print(mul)
-            elif notalist[0] == sym[4]:
+            elif notalist[0] == "%":
                 Mod= int(notalist[1])% int(notalist[2])      # %ab = a%b
                 print(Mod)
             else:
@@ -262,6 +281,9 @@ class notation:
 
         if len(notalist) == 5:
             if notalist[1] in list("+-*%/"):
+                """
+                equation for this is /*abc = (a*b)/c, you can use +-*/% operators
+                """
                 # solving 1st postfix
                 if notalist[1] == "+":
                     solv= int(notalist[2]) + int(notalist[3])
@@ -284,8 +306,11 @@ class notation:
                     solution= solv / int(notalist[4])
                 else:
                     solution= solv % int(notalist[4])
-                return solution
+                print(solution)
             elif notalist[2] in list("+-*%/"):
+                """
+                equation for this is /a*bc = a/(b*c), you can use +-*/% operators
+                """
                 if notalist[2] == "+":
                     solv= int(notalist[3]) + int(notalist[4])
                 elif notalist[2] == "-":
@@ -296,7 +321,7 @@ class notation:
                     solv= int(notalist[3]) / int(notalist[4])
                 else:
                     solv= int(notalist[3]) % int(notalist[4])
-                # solving main postfix
+                # solving main prefix
                 if notalist[0] == "+":
                     solution = int(notalist[1]) + solv
                 elif notalist[0] == "-":
@@ -307,11 +332,14 @@ class notation:
                     solution = int(notalist[1]) / solv
                 else:
                     solution = int(notalist[1]) % solv
-                return solution
+                print(solution)
             else:
                 return "Please enter correct equation in abc*/ format or ab*c/, you can use */+-%"
 
         if len(notalist)==7:
+            """
+            equation for this is /*ab*cd = (a*b)/(c*d), you can use +-*/% operators
+            """
             # for 1st prefix
             if notalist[1]=="+":
                 calc1= int(notalist[2]) + int(notalist[3])
@@ -347,5 +375,4 @@ class notation:
                 result= calc1 / calc2
             else:
                 result= calc1 % calc2
-            return result
-                                                                                                                                                                                                                                        
+            print(result)
