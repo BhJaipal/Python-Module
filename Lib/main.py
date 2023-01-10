@@ -7,7 +7,7 @@ Personal Python Module
 def __init__():
     return "This is a Python file used as a personal python module "
 def new():
-    return "Prefix and Postfix notation are not complete and can only used for 2 integers"
+    return "Prefix and Postfix notation are not complete and can only used for 2 and 4 integers"
 
 """
 Use of New_Math class
@@ -135,25 +135,64 @@ sym=list("+-*/%")
 class notation:
     def postfix(nota1):
         notalist=list(nota1)
-        if notalist[2] == sym[0]:
-            sum= int(notalist[0])+ int(notalist[1])       # ab+ = a+b
-            print (sum)
-        elif notalist[2] == sym[1]:
-            sub= int(notalist[0])- int(notalist[1])       # ab- = a-b
-            print(sub)
-        elif notalist [2] == sym[2]:
-            mul= int(notalist[0])* int(notalist[1])       # ab* = a*b
-            print (mul)
-        elif notalist [2] == sym[4]:
-            Mod= int(notalist[0])% int(notalist[1])       # ab% = a%b
-            print(Mod)
-        else:
-            div= int(notalist[0])/ int(notalist[1])       # ab/ = a/b
-            print (div)
+        if len(notalist) == 3:
+            if notalist[2] == sym[0]:
+                sum= int(notalist[0])+ int(notalist[1])       # ab+ = a+b
+                print (sum)
+            elif notalist[2] == sym[1]:
+                sub= int(notalist[0])- int(notalist[1])       # ab- = a-b
+                print(sub)
+            elif notalist [2] == sym[2]:
+                mul= int(notalist[0])* int(notalist[1])       # ab* = a*b
+                print (mul)
+            elif notalist [2] == sym[4]:
+                Mod= int(notalist[0])% int(notalist[1])       # ab% = a%b
+                print(Mod)
+            else:
+                div= int(notalist[0])/ int(notalist[1])       # ab/ = a/b
+                print (div)
+        
+        if len(notalist) == 7:
+            # for 1st postfix
+            if notalist[2]=="+":
+                calc1= int(notalist[0]) + int(notalist[1])
+            elif notalist[2]=="-":
+                calc1= int(notalist[0]) - int(notalist[1])
+            elif notalist[2]=="*":
+                calc1= int(notalist[0]) * int(notalist[1])
+            elif notalist[2]=="/":
+                calc1= int(notalist[0]) / int(notalist[1])
+            else:
+                calc1= int(notalist[0]) % int(notalist[1])
+            # 1st postfix is done
+            # now, for second postfix
+            if notalist[5]== "+":
+                calc2= int(notalist[3]) + int(notalist[4])
+            elif notalist[5]== "-":
+                calc2= int(notalist[3]) - int(notalist[4])
+            elif notalist[5]== "*":
+                calc2= int(notalist[3]) * int(notalist[4])
+            elif notalist[5]=="/":
+                calc2= int(notalist[3]) / int(notalist[4])
+            else:
+                calc2= int(notalist[3]) % int(notalist[4])
+            # 2nd postfix is also done
+            # now for main prefix
+            if notalist[6]=="+":
+                result= calc1 + calc2
+            elif notalist[6]=="-":
+                result= calc1 - calc2
+            elif notalist[6]=="*":
+                result= calc1 * calc2
+            elif notalist[6]=="/":
+                result= calc1 / calc2
+            else:
+                result= calc1 % calc2
+            return result
     
     def prefix(nota1):
         notalist =list(nota1)
-        if len(notalist)==3:
+        if len(notalist) == 3:
             if notalist[0] == sym[0]:
                 sum=int(notalist[1]) + int(notalist[2])      # +ab = a+b
                 print (sum)
