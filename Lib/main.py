@@ -152,7 +152,7 @@ class notation:
             elif notalist[2] == "-":
                 sub= int(notalist[0])- int(notalist[1])       # ab- = a-b
                 print(sub)
-            elif notalist [2] == *:
+            elif notalist [2] == "*":
                 mul= int(notalist[0])* int(notalist[1])       # ab* = a*b
                 print (mul)
             elif notalist [2] == "%":
