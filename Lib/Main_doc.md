@@ -122,4 +122,4 @@ it will print their ceiling value
 ```
 
 ### About Notation
-**Notation is an attribute of Lib.main, it is made getting solution of questions given in Prefix or Postfix form but it can used for only 2 integers**
+**Notation is an attribute of Lib.main, it is made for getting solution of questions given in Prefix or Postfix equation and is complete in 0.3.9**
