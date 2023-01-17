@@ -48,6 +48,6 @@ This is setup file
 
 > To access it as a module,create a folder named Lib with these save it your python library folder.
 
-> Then open interpreter and import this file.
+> Then open interpreter and import this file by `import Lib`.
 
 #### Created with [Github codespace (Visual Studio Dev)](https://vscode.dev)
