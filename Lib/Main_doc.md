@@ -6,7 +6,7 @@
 When decimal value of num is between 
 0.25-0.8, it will print as they are.
 
-```
+```python
 >>> from Lib.main import *
 >>> num= 7.4
 >>> new_math.round(num)
@@ -16,7 +16,7 @@ When decimal value of num is between
 If decimal value of num is lower than 
 0.25, it will print their floor value.
 
-```
+```python
 >>> from Lib.main import *
 >>> num2= 2.1
 >>> new_math.round(num2)
@@ -25,7 +25,7 @@ If decimal value of num is lower than
 
 If decimal value of num is greater than 0.8,
 it will print their ceiling value
-```
+```python
 >>> from Lib.main import *
 >>> num3= 6.8 
 >>> new_math.round(num3)
@@ -35,7 +35,7 @@ it will print their ceiling value
 ### Cbrt
 **This function is for getting Cuberoot of given number**
 
-```
+```python
 >>> from Lib.main import *
 >>> new_math.cbrt(1728)
 12
@@ -43,7 +43,7 @@ it will print their ceiling value
 ### Logadd
 **This function is for getting addition of log values**
 
-```
+```python
 >>> from Lib.main import *
 >>> new_math.logadd(2,3)
 0.7781
@@ -52,7 +52,7 @@ it will print their ceiling value
 ### Logsub
 **This function is for getting subtraction of log values**
 
-```
+```python
 >>> from Lib.main import *
 >>> new_math.logsub(9,3)
 0.4771
@@ -66,7 +66,7 @@ it will print their ceiling value
 ### Matrix
 **This function is for getting matrix form of a list, tuple, or sets**
 
-```
+```python
 >>> from Lib.main import *
 >>> matrix.matrix([[2,5,7],[3,2,6],[4,7,2]])
 2 5 7
@@ -77,7 +77,7 @@ it will print their ceiling value
 ### Mat_trans
 **This function is for getting transpose of matrix form of list, tuple or set**
 
-```
+```python
 >>> from Lib.main import *
 >>> matrix.mat_trans([[2,5,7],[3,2,6],[4,7,2]])
 2 3 4
@@ -88,7 +88,7 @@ it will print their ceiling value
 ### determin
 **This function is for getting determinant of a matrix form of list, tuple or set**
 
-```
+```python
 >>> from Lib.main import *
 >>> matrix.determin([[2,5,7],[3,2,6],[4,7,2]])
 105
@@ -102,7 +102,7 @@ it will print their ceiling value
 ### Prefix 
 **This function is for getting solution of a given Prefix format question, question should be given in string data type**
 
-```
+```python
 >>> from Lib.main import *
 >>> notation.prefix("+25")
 7
@@ -113,7 +113,7 @@ it will print their ceiling value
 ### Postfix
 **This function is for getting solution of a given Postfix format question, question should be given in string data type**
 
-```
+```python
 >>> from Lib.main import *
 >>> notation.postfix("97-")
 2
