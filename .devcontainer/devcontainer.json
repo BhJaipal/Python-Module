@@ -7,7 +7,31 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python"
+				"ms-python.python",
+				"wowbox.code-debuger",
+				"batisteo.vscode-django",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"magicstack.MagicPython",
+				"yzhang.markdown-all-in-one",
+				"DavidAnson.vscode-markdownlint",
+				"ms-python.vscode-pylance",
+				"benjamin-simmonds.pythoncpp-debug",
+				"alexrsagen.python-debug-address-prompt",
+				"nils-ballmann.python-coding-tools",
+				"donjayamanne.python-extension-pack",
+				"Mukundan.python-docs",
+				"tht13.python",
+				"vaisakh96.pythonic-snippets",
+				"EricSia.pythonsnippets3",
+				"Take-Me1010.pykv-snippets",
+				"WeidaWang.quick-python-print",
+				"dsebastien.vscode-python-pack",
+				"HarryHopkinson.vs-code-runner",
+				"docsmsft.docs-markdown",
+				"ms-vscode.cpptools"
 			]
 		}
 	}
