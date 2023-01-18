@@ -7,8 +7,8 @@
  </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/last-commit/BhJaipal/Python-Module">
-<img src="https://img.shields.io/github/contributors/BhJaipal/Python-Module">
+<img src="https://img.shields.io/github/last-commit/BhJaipal/Python-Module?color=aqua&logo=%20Github&logoColor=%20yellow&style=plastic">
+<img src="https://img.shields.io/github/contributors/BhJaipal/Python-Module?color=blue&logo=%20Github&logoColor=%20yellow&style=plastic">
 </p>
 
 > Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/__init__.py)
