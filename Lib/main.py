@@ -47,8 +47,7 @@ class new_math:
             return math.floor(num)     # round off to lower integer
         else:
             return (num)               # present in middle range thus it will not be changed
-    def cbrt(num):
-        return round(num**(1/3))
+    cbrt = lambda num: round(num**(1/3))
     """ because math module uses log base e also called natural log or ln,
     to convert it to log base 10, we divide it with math.log(10) or ln(10)"""
     def logadd(a,b):
