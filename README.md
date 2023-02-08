@@ -6,7 +6,7 @@
   </a> 
  </p>
 
-[![Python](https://img.shields.io/badge/--fff?logo=python)](https://www.python.org/) 
+[![Python](https://img.shields.io/badge/Python-fff?logo=python)](https://www.python.org/) 
 [![Visual Studio Code](https://img.shields.io/badge/V_S_Code-007ACC?logo=visual%20studio%20code&logoColor=3f3f8f)](https://code.visualstudio.com/) 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label&color=black)](https://github.com)
 [![GitHub stars](https://img.shields.io/github/stars/BhJaipal/Python-Module.svg?style=plastic&label=Star&maxAge=2592000)](https://github.com/BhJaipal/Python-Module)
