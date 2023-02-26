@@ -4,7 +4,7 @@
 **This function is for getting approximation** 
 
 When decimal value of num is between 
-0.25-0.8, it will print as they are.
+0.25-0.85, it will print as they are.
 
 ```python
 >>> from Lib.main import *
@@ -23,11 +23,11 @@ If decimal value of num is lower than
 2
 ```
 
-If decimal value of num is greater than 0.8,
+If decimal value of num is greater than 0.85,
 it will print their ceiling value
 ```python
 >>> from Lib.main import *
->>> num3= 6.8 
+>>> num3= 6.87 
 >>> new_math.round(num3)
 7
 ```
