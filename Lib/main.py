@@ -41,7 +41,7 @@ class new_math:
     def round(num):
         f= math.floor(num)
         r1= num-f
-        if r1> 0.8:
+        if r1> 0.85:
             return math.ceil(num)      # round off to greater integer
         elif r1< 0.25:
             return math.floor(num)     # round off to lower integer
