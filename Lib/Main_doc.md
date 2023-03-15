@@ -153,6 +153,7 @@ class Cuboid:
 ```
 
 **It has a constructor**
+
 **It is used to get Total Surface area, Lateral Surface area, Volume, length of Diagonal and a execution method**
 
 ### __init__
@@ -211,6 +212,88 @@ Volume: 504
 Length of Diagonal: 13.92
 ```
 
+## Cube 
 
+```python
+class Cube:
+    def __init__(self, side: float):
+        self.side = side;
+    def TotalSurfaceArea(self):
+        return 6* self.side * self.side; 
+    def LateralSurfaceArea(self):
+        return 4* self.side* self.side;
+    def Volume(self):
+        return self.side * self.side * self.side;
+    def lengthofDiagonal(self):
+        return self.side* 1.73;
+    def execution(self):
+        print("Total Surface area: ", self.TotalSurfaceArea())
+        print("Lateral Surface area: ", self.LateralSurfaceArea())
+        print("Volume: ", self.Volume())
+        print("Length of Diagonal: ", self.lengthofDiagonal())
+```
 
+**It has a constructor**
 
+**It is used to get Total Surface area, Lateral Surface area, Volume, length of Diagonal and a execution method**
+
+### __init__
+
+It takes side of Cube
+
+```python 
+from Lib.shapes import *;
+side: float= 8;
+cube: Cube = Cube(side);
+```
+
+### TotalSurfaceArea
+
+it returns Total Surface area of Cube which is $$6 × a&sup2;\$$
+
+```python
+print(cube.TotalSurfaceArea())
+```
+
+`384`
+
+### LateralSurfaceArea()
+
+it returns Lateral Surface area of Cube which is $$4 × a&sup2;\$$
+
+```python
+print(cube.LateralSurfaceArea())
+```
+`256`
+
+### Volume 
+
+it returns Volume of Cube which is $$a&sup3;\$$
+
+```python
+print(cube.Volume())
+```
+
+`512`
+
+### lengthofDiagonal
+
+it return length of Diagonal of Cube which is $$a × sqrt{3}\$$
+
+```python
+print(cube.lengthofDiagonal())
+```
+`13.84`
+
+### execution
+
+it prints the value returned by TotalSurfaceArea, LateralSurfaceArea, Volume, lengthofDiagonal
+```python
+cube.execution()
+```
+```
+Total Surface area: 384
+Lateral Surface area: 256
+Volume: 512
+Length of Diagonal: 13.84
+```
