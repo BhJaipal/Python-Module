@@ -1,3 +1,5 @@
+# Lib.main
+
 ## New_Math
 
 ### Round
@@ -123,3 +125,92 @@ it will print their ceiling value
 
 ### About Notation
 **Notation is an attribute of Lib.main, it is made for getting solution of questions given in Prefix or Postfix equation and is complete in 0.3.9**
+
+# Lib.shapes
+
+## Cuboid
+
+```python
+import math 
+class Cuboid:
+    def __init__(self, length: float, brea: float, hei: float):
+        self.length = len;
+        self.brea= brea
+        self.hei = hei;
+    def TotalSurfaceArea(self):
+        return 2*(self.length*self.brea + self.brea*self.hei + self.length*self.hei); 
+    def LateralSurfaceArea(self):
+        return 2*(self.length + self.brea)* self.hei;
+    def Volume(self):
+        return self.length * self.hei * self.brea;
+    def lengthofDiagonal(self):
+        return math.sqrt(math.pow(self.length, 2) + math.pow(self.brea, 2) + math.pow(self.hei, 2));
+    def execution(self):
+        print("Total Surface area: ", self.TotalSurfaceArea())
+        print("Lateral Surface area: ", self.LateralSurfaceArea())
+        print("Volume: ", self.Volume())
+        print("Length of Diagonal: ", self.lengthofDiagonal())
+```
+
+**It has a constructor**
+**It is used to get Total Surface area, Lateral Surface area, Volume, length of Diagonal and a execution method**
+
+### __init__
+
+It takes length, breadth and height of Cuboid 
+```python 
+from Lib.shapes import *;
+len: float = 9;
+brea: float= 8;
+hei: float = 7;
+cuboid: Cuboid = Cuboid(len, brea, hei);
+```
+
+### TotalSurfaceArea
+
+it returns Total Surface area of Cuboid which is $$2×(l×b + l×h + h×b)\$$
+```python
+print(cuboid.TotalSurfaceArea())
+```
+`382`
+
+### LateralSurfaceArea()
+
+it returns Lateral Surface area of Cuboid which is $$2×(l + b)× h\$$
+```python
+print(cuboid.LateralSurfaceArea())
+```
+`238`
+
+### Volume 
+
+it returns Volume of Cuboid which is $$l×b×h\$$
+```python
+print(cuboid.Volume())
+```
+`504`
+
+### lengthofDiagonal
+
+it return length of Diagonal of Cuboid which is $$\sqrt{l&sup2; + b&sup2; + h&sup2;}\$$
+```python
+print(cuboid.lengthofDiagonal())
+```
+`13.92`
+
+### execution
+
+it prints the value returned by TotalSurfaceArea, LateralSurfaceArea, Volume, lengthofDiagonal 
+```python
+cuboid.execution()
+```
+```
+Total Surface area: 382
+Lateral Surface area: 238
+Volume: 504
+Length of Diagonal: 13.92
+```
+
+
+
+
