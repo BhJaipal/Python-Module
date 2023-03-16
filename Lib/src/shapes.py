@@ -36,7 +36,7 @@ class Cube():
         print(f"length of Diagonal: {self.lengthofDiagonal()}");
 
 class Sphere:
-    def ____init__(self, radius: float):
+    def __init__(self, radius: float):
         self.radius = radius;
     def SurfaceArea (self):
         return 4 * 3.14 * (self.radius**2);
