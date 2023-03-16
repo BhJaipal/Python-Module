@@ -21,15 +21,17 @@
 <img src="https://img.shields.io/badge/Visual_Studio_Code-618745?style=for-the-badge&logo=visual%20studio%20code&logoColor=3f3f8f&style=plastic" />
 </p>
 
-> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/__init__.py)
+> Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/__init__.py)
 > 
-> Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/main.py) for functions of Personal-Python-Module
+> Open [main](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/main.py) for functions of Personal-Python-Module
 > 
-> [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/setup.py)
+> [setup](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/setup.py)
 > 
-> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/Main_doc.md) for main
+> Open [shapes](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/shapes.py) for 3D shapes calculations
+>
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/Main_doc.md) for main
 > 
-> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/Main_doc.ipynb) for main in Jupyter notebook
+> [Documentation](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/Main_doc.ipynb) for main in Jupyter notebook
 
 ## __init__.py
 > __init__
@@ -52,6 +54,15 @@
 ## setup.py
 
 This is setup file
+
+## shapes
+
+|                    | Cuboid | Cube |     Cylinder     | Sphere |
+|--------------------|--------|------|------------------|--------|
+| TotalSurfaceArea   |  Yes   | Yes  |        Yes       |  Yes   |
+|       Volume       |  Yes   | Yes  |        Yes       |  Yes   |
+| LateralSurfaceArea |  Yes   | Yes  | CurvedSufaceArea |   No   |
+|  lengthofDiagonal  |  Yes   | Yes  |         No       |   No   |
 
 # About
 > This is a Personal python module created by Jaipal Bhanwariya.
