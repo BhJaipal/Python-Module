@@ -17,7 +17,7 @@ It round off value to its nearest integer in a limited range
 >>> from Lib.main import *
 >>> new_math.round(8.9)
 9
->>> new_math.round(1.2)
+>>> new_math.round(1.14)
 1
 >>> new_math.round(5.6)
 5.6
@@ -43,7 +43,7 @@ class new_math:
         r1= num-f
         if r1> 0.85:
             return math.ceil(num)      # round off to greater integer
-        elif r1< 0.25:
+        elif r1< 0.15:
             return math.floor(num)     # round off to lower integer
         else:
             return (num)               # present in middle range thus it will not be changed
@@ -93,12 +93,12 @@ Use of determin() function
 """
 
 class matrix:
-    def matrix(mtx_list):
+    def matrix(mtx_list: list):
         for row in mtx_list:
             for elem in row:
-                print (elem,end="  ")        # print elements of matrix list
+                print (elem,end=" ")        # print elements of matrix list
             print ()
-    def mat_trans(mtx_list):
+    def mat_trans(mtx_list: list):
         def transpose(mtx_list):
             for n in range(len(mtx_list)):
                 i=0
@@ -112,7 +112,7 @@ class matrix:
                 print (elem,end=" ")
             print ()
         transpose(mtx_list)
-    def determin(mtx_list):
+    def determin(mtx_list: list):
         co11= mtx_list[1][1]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][1]     # cofactor of a11
         co12= mtx_list[1][0]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][0]     # cofactor of a12
         co13= mtx_list[1][0]*mtx_list[2][1]- mtx_list[1][1]*mtx_list[2][0]     # cofactor of a13
@@ -151,7 +151,7 @@ Used to calculate postfix equation
 """
 
 class notation:
-    def postfix(nota1):
+    def postfix(nota1: str):
         notalist=list(nota1)
         if len(notalist) == 3:
             if notalist[2] == "+":
@@ -268,7 +268,7 @@ class notation:
                 result= calc1 % calc2
             print(result)
     
-    def prefix(nota1):
+    def prefix(nota1: str):
         notalist =list(nota1)
         if len(notalist) == 3:
             if notalist[0] == "+":
