@@ -9,7 +9,7 @@ def __init__():
 def new():
     return "Prefix and Postfix notation are now complete"
 __name__= "Lib"
-_version="0.4.4"
+_version="0.4.9"
 __doc__= {
     "__init__": __init__, 
     "__name__":__name__, 
