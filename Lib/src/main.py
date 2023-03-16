@@ -38,7 +38,7 @@ Use for log subtraction
 """
 
 class new_math:
-    def round(num):
+    def round(num: float):
         f= math.floor(num)
         r1= num-f
         if r1> 0.85:
@@ -47,15 +47,22 @@ class new_math:
             return math.floor(num)     # round off to lower integer
         else:
             return (num)               # present in middle range thus it will not be changed
+    
     cbrt = lambda num: round(num**(1/3))
+    
     """ because math module uses log base e also called natural log or ln,
     to convert it to log base 10, we divide it with math.log(10) or ln(10)"""
     def logadd(a,b):
-        lga=math.log(a)/math.log(10)   # gets log base 10 value of a
-        lgb=math.log(b)/math.log(10)   # gets log base 10 value of b
+        lga= (math.log(a)/math.log(10)) or 1   # gets log base 10 value of a
+        lgb= (math.log(b)/math.log(10)) or 1   # gets log base 10 value of b
         return lgb+lga
     def logsub(a,b):
-        div=round(a/b)                # as log(a) - log(b)= log(a/b), div= a/b
+        if b>a:
+            a, b = b, a
+        else:
+            pass
+        div= round((a or 2)/(b or 1)   # Because log 1= 0. So, numerator must be greater than 1
+        # as log(a) - log(b)= log(a/b), div= a/b
         lgsb=math.log(div)/math.log(10)  # lgsb is log(div) where div=a/b
         return lgsb
     def __init__():
