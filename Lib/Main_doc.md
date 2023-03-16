@@ -146,10 +146,10 @@ class Cuboid:
     def lengthofDiagonal(self):
         return math.sqrt(math.pow(self.length, 2) + math.pow(self.brea, 2) + math.pow(self.hei, 2));
     def execution(self):
-        print("Total Surface area: ", self.TotalSurfaceArea())
-        print("Lateral Surface area: ", self.LateralSurfaceArea())
-        print("Volume: ", self.Volume())
-        print("Length of Diagonal: ", self.lengthofDiagonal())
+        print(f"Total Surface area: {self.TotalSurfaceArea()}")
+        print(f"Lateral Surface area: {self.LateralSurfaceArea()}")
+        print(f"Volume: {self.Volume()}")
+        print(f"Length of Diagonal: {self.lengthofDiagonal()}")
 ```
 
 **It has a constructor**
@@ -227,10 +227,10 @@ class Cube:
     def lengthofDiagonal(self):
         return self.side* 1.73;
     def execution(self):
-        print("Total Surface area: ", self.TotalSurfaceArea())
-        print("Lateral Surface area: ", self.LateralSurfaceArea())
-        print("Volume: ", self.Volume())
-        print("Length of Diagonal: ", self.lengthofDiagonal())
+        print(f"Total Surface area: {self.TotalSurfaceArea()}")
+        print(f"Lateral Surface area: {self.LateralSurfaceArea()}")
+        print(f"Volume: {self.Volume()}")
+        print(f"Length of Diagonal: {self.lengthofDiagonal()}")
 ```
 
 **It has a constructor**
@@ -296,4 +296,131 @@ Total Surface area: 384
 Lateral Surface area: 256
 Volume: 512
 Length of Diagonal: 13.84
+```
+
+Sphere
+
+```python
+class Sphere:
+    def __init__(self, radius: float):
+        self.radius = radius;
+    def SurfaceArea (self):
+        return 4 * 3.14 * (self.radius**2);
+    def Volume(self):
+        return 1.67 * 3.14 * (self.radius**3);
+    def execution(self):
+        print(f"Surface Area: {self.SurfaceArea()}");
+        print(f"Volume: {self.Volume()}");
+```
+
+**It has a constructor**
+
+**It is used to get Surface area, Volume and a execution method**
+
+### __init__
+
+It takes radius of Sphere
+```python
+from Lib.shapes import *;
+radius: float= 7;
+sphere: Sphere = Cube(side);
+```
+
+### SurfaceArea
+
+it returns Surface area of Sphere which is $$4 × π × r&sup2;\$$
+```python
+print(sphere.TotalSurfaceArea())
+```
+
+`615.44`
+
+### Volume 
+
+it returns Volume of Sphere which is $$4/3 × π × r&sup3;\$$
+
+```python
+print(sphere.Volume())
+```
+`1798.6234`
+
+### execution
+
+it prints the value returned by SurfaceArea, Volume
+```python
+sphere.execution()
+```
+
+```
+Surface area: 615.44
+Volume: 1798.6234
+```
+
+## Cylinder
+
+```python
+class Cylinder:
+    def __init__(self, radius: float, height: float):
+        self.radius = radius;
+        self.height = height;
+    def TotalSurfaceArea(self):
+        return 2* 3.14 * self.radius * (self.height + self.radius);
+    def CurvedSurfaceArea(self):
+        return 2* 3.14 * self.radius * self.height;
+    def Volume(self):
+        return 3.14 * (self.radius**2) * self.height;
+    def execution(self):
+        print(f"Total Surface Area: {self.TotalSurfaceArea()}");
+        print(f"Curved Surface Area: {self.CurvedSurfaceArea()}");
+        print(f"Volume: {self.Volume()}");
+```
+
+**It has a constructor**
+
+**It is used to get Total Surface area, Curved Surface area, Volume and a execution method**
+
+### __init__
+
+It takes radius and height of Cylinder
+```python 
+from Lib.shapes import *;
+radius: float= 7;
+height: float= 3;
+cylinder: Cylinder = Cylinder(radius, height);
+```
+
+### TotalSurfaceArea
+
+it returns Total Surface area of Cylinder which is $$2 × π × r × (h + r)\$$
+```python
+print(cylinder.TotalSurfaceArea())
+```
+`439.6`
+
+### CurvedSurfaceArea
+
+it returns Curved Surface area of Cylinder which is $$2 × π × r × h\$$
+```python
+print(cylinder.CurvedSurfaceArea())
+```
+`131.88`
+
+### Volume 
+
+it returns Volume of Cylinder which is $$π × r&sup2; × h\$$
+```python
+print(cylinder.Volume())
+```
+`461.58`
+
+### execution
+
+it prints the value returned by TotalSurfaceArea, CurvedSurfaceArea, Volume
+```python
+sphere.execution()
+```
+```
+Total Surface area: 439.6
+Curved Surface area: 131.88
+Volume: 461.58
 ```
