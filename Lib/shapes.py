@@ -1,6 +1,6 @@
 import math
 class Cuboid:
-    def __init__(self, leng, brea, hei):
+    def __init__(self, leng: float, brea: float, hei: float):
         self.leng = leng;
         self.brea= brea;
         self.hei = hei;
@@ -19,7 +19,7 @@ class Cuboid:
         print(f"length of Diagonal: {self.lengthofDiagonal()}");
 
 class Cube():
-    def __init__(self, side):
+    def __init__(self, side: float):
         self.side= side;
     def TotalSurfaceArea(self):
         return 6*(self.side ** 2);
@@ -36,7 +36,7 @@ class Cube():
         print(f"length of Diagonal: {self.lengthofDiagonal()}");
 
 class Sphere:
-    def ____init__(self, radius):
+    def ____init__(self, radius: float):
         self.radius = radius;
     def SurfaceArea (self):
         return 4 * 3.14 * (self.radius**2);
@@ -47,9 +47,9 @@ class Sphere:
         print(f"Volume: {self.Volume()}");
 
 class Cylinder:
-    def __init__(self, radius, height):
-        swlf.radius = radius;
-        swlf.heigth = height;
+    def __init__(self, radius: float, height: float):
+        self.radius = radius;
+        self.height = height;
     def TotalSurfaceArea(self):
         return 2* 3.14 * self.radius * (self.height + self.radius);
     def CurvedSurfaceArea(self):
