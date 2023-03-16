@@ -169,15 +169,21 @@ cuboid: Cuboid = Cuboid(len, brea, hei);
 
 ### TotalSurfaceArea
 
-it returns Total Surface area of Cuboid which is $$2×(l×b + l×h + h×b)\$$
+it returns Total Surface area of Cuboid which is 
+
+$$2×(l×b + l×h + h×b)\$$
+
 ```python
 print(cuboid.TotalSurfaceArea())
 ```
 `382`
 
-### LateralSurfaceArea()
+### LateralSurfaceArea
 
-it returns Lateral Surface area of Cuboid which is $$2×(l + b)× h\$$
+it returns Lateral Surface area of Cuboid which is 
+
+$$2×(l + b)× h\$$
+
 ```python
 print(cuboid.LateralSurfaceArea())
 ```
@@ -185,7 +191,10 @@ print(cuboid.LateralSurfaceArea())
 
 ### Volume 
 
-it returns Volume of Cuboid which is $$l×b×h\$$
+it returns Volume of Cuboid which is 
+
+$$l×b×h\$$
+
 ```python
 print(cuboid.Volume())
 ```
@@ -193,7 +202,10 @@ print(cuboid.Volume())
 
 ### lengthofDiagonal
 
-it return length of Diagonal of Cuboid which is $$\sqrt{l&sup2; + b&sup2; + h&sup2;}\$$
+it return length of Diagonal of Cuboid which is 
+
+$$\sqrt{l&sup2; + b&sup2; + h&sup2;}\$$
+
 ```python
 print(cuboid.lengthofDiagonal())
 ```
@@ -249,7 +261,9 @@ cube: Cube = Cube(side);
 
 ### TotalSurfaceArea
 
-it returns Total Surface area of Cube which is $$6 × a&sup2;\$$
+it returns Total Surface area of Cube which is 
+
+$$6 × a&sup2;\$$
 
 ```python
 print(cube.TotalSurfaceArea())
@@ -257,9 +271,11 @@ print(cube.TotalSurfaceArea())
 
 `384`
 
-### LateralSurfaceArea()
+### LateralSurfaceArea
 
-it returns Lateral Surface area of Cube which is $$4 × a&sup2;\$$
+it returns Lateral Surface area of Cube which is 
+
+$$4 × a&sup2;\$$
 
 ```python
 print(cube.LateralSurfaceArea())
@@ -268,7 +284,9 @@ print(cube.LateralSurfaceArea())
 
 ### Volume 
 
-it returns Volume of Cube which is $$a&sup3;\$$
+it returns Volume of Cube which is 
+
+$$a&sup3;\$$
 
 ```python
 print(cube.Volume())
@@ -278,7 +296,9 @@ print(cube.Volume())
 
 ### lengthofDiagonal
 
-it return length of Diagonal of Cube which is $$a × sqrt{3}\$$
+it return length of Diagonal of Cube which is 
+
+$$\sqrt{3} × a\$$
 
 ```python
 print(cube.lengthofDiagonal())
@@ -328,7 +348,10 @@ sphere: Sphere = Cube(side);
 
 ### SurfaceArea
 
-it returns Surface area of Sphere which is $$4 × π × r&sup2;\$$
+it returns Surface area of Sphere which is 
+
+$$4 × π × r&sup2;\$$
+
 ```python
 print(sphere.TotalSurfaceArea())
 ```
@@ -337,7 +360,9 @@ print(sphere.TotalSurfaceArea())
 
 ### Volume 
 
-it returns Volume of Sphere which is $$4/3 × π × r&sup3;\$$
+it returns Volume of Sphere which is 
+
+$$4/3 × π × r&sup3;\$$
 
 ```python
 print(sphere.Volume())
@@ -391,7 +416,10 @@ cylinder: Cylinder = Cylinder(radius, height);
 
 ### TotalSurfaceArea
 
-it returns Total Surface area of Cylinder which is $$2 × π × r × (h + r)\$$
+it returns Total Surface area of Cylinder which is 
+
+$$2 × π × r × (h + r)\$$
+
 ```python
 print(cylinder.TotalSurfaceArea())
 ```
@@ -399,7 +427,10 @@ print(cylinder.TotalSurfaceArea())
 
 ### CurvedSurfaceArea
 
-it returns Curved Surface area of Cylinder which is $$2 × π × r × h\$$
+it returns Curved Surface area of Cylinder which is 
+
+$$2 × π × r × h\$$
+
 ```python
 print(cylinder.CurvedSurfaceArea())
 ```
@@ -407,7 +438,10 @@ print(cylinder.CurvedSurfaceArea())
 
 ### Volume 
 
-it returns Volume of Cylinder which is $$π × r&sup2; × h\$$
+it returns Volume of Cylinder which is 
+
+$$π × r&sup2; × h\$$
+
 ```python
 print(cylinder.Volume())
 ```
