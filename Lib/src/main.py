@@ -91,18 +91,20 @@ class matrix:
             for elem in row:
                 print (elem,end="  ")        # print elements of matrix list
             print ()
-    def mat_trans(mt_list):
-        mtx_list= copy.copy(mt_list)
-        for n in range(len(mtx_list)):
-            i=0
-            mtx_list[n][i], mtx_list[i][n]=mtx_list[i][n], mtx_list[n][i]     # swapping elements position aij=aji, where i, j= (3,1),(1,3),(2,3),(3,2)
-            if n!=0:
-                i+=1
-                mtx_list[n][i], mtx_list[i][n]=mtx_list[i][n], mtx_list[n][i]   # swapping elements position aij=aji, where i, j= (1,2),(2,1)
+    def mat_trans(mtx_list):
+        def transpose(mtx_list):
+            for n in range(len(mtx_list)):
+                i=0
+                mtx_list[n][i], mtx_list[i][n]=mtx_list[i][n], mtx_list[n][i]     # swapping elements position aij=aji, where i, j= (3,1),(1,3),(2,3),(3,2)
+                if n!=0:
+                    i+=1
+                    mtx_list[n][i], mtx_list[i][n]=mtx_list[i][n], mtx_list[n][i]   # swapping elements position aij=aji, where i, j= (1,2),(2,1)
+        transpose(mtx_list)
         for row in mtx_list:
             for elem in row:
-                print (elem,end="  ")
+                print (elem,end=" ")
             print ()
+        transpose(mtx_list)
     def determin(mtx_list):
         co11= mtx_list[1][1]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][1]     # cofactor of a11
         co12= mtx_list[1][0]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][0]     # cofactor of a12
