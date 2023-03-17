@@ -18,7 +18,7 @@
 <img src="https://img.shields.io/github/last-commit/BhJaipal/Python-Module?color=aqua&logo=%20Github&logoColor=%20yellow&style=plastic">
 <img src="https://img.shields.io/github/contributors/BhJaipal/Python-Module?color=blue&logo=%20Github&logoColor=%20yellow&style=plastic">
 <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
-<img src="https://img.shields.io/badge/Visual_Studio_Code-618745?style=for-the-badge&logo=visual%20studio%20code&logoColor=3f3f8f&style=plastic" />
+<img src="https://img.shields.io/badge/VS_Insiders-3F3F8F?style=for-the-badge&logo=visual%20studio%20code&logoColor=12b889&style=plastic" />
 </p>
 
 > Check [__init__](https://github.com/BhJaipal/Personal-python-module/blob/main/Lib/src/__init__.py)
