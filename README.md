@@ -14,6 +14,8 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+![git](https://badgen.net/badge/icon/git?icon=git&label)
+
 <p align="center">
 <img src="https://img.shields.io/github/last-commit/BhJaipal/Python-Module?color=aqua&logo=%20Github&logoColor=%20yellow&style=plastic">
 <img src="https://img.shields.io/github/contributors/BhJaipal/Python-Module?color=blue&logo=%20Github&logoColor=%20yellow&style=plastic">
