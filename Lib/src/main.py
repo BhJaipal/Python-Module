@@ -4,9 +4,9 @@ import copy
 """
 Personal Python Module
 """
-def __init__():
+def __init__() -> str:
     return "This is a Python file used as a personal python module "
-def new():
+def new() -> str:
     return "Prefix and Postfix notation are now complete"
 
 """
@@ -38,7 +38,7 @@ Use for log subtraction
 """
 
 class new_math:
-    def round(num: float):
+    def round(num: float) -> int:
         f= math.floor(num)
         r1= num-f
         if r1> 0.85:
@@ -52,11 +52,11 @@ class new_math:
     
     """ because math module uses log base e also called natural log or ln,
     to convert it to log base 10, we divide it with math.log(10) or ln(10)"""
-    def logadd(a,b):
+    def logadd(a,b) -> float:
         lga= (math.log(a)/math.log(10)) or 1   # gets log base 10 value of a
         lgb= (math.log(b)/math.log(10)) or 1   # gets log base 10 value of b
         return lgb+lga
-    def logsub(a,b):
+    def logsub(a,b) -> float:
         if b>a:
             a, b = b, a
         else:
@@ -65,7 +65,7 @@ class new_math:
         # as log(a) - log(b)= log(a/b), div= a/b
         lgsb=math.log(div)/math.log(10)  # lgsb is log(div) where div=a/b
         return lgsb
-    def __init__():
+    def __init__() -> str:
         return "This class is for attribute which you want in math module but don't have "
 
 """
@@ -93,13 +93,13 @@ Use of determin() function
 """
 
 class matrix:
-    def matrix(mtx_list: list):
+    def matrix(mtx_list: list) -> None:
         for row in mtx_list:
             for elem in row:
                 print (elem,end=" ")        # print elements of matrix list
             print ()
-    def mat_trans(mtx_list: list):
-        def transpose(mtx_list):
+    def mat_trans(mtx_list: list) -> None:
+        def transpose(mtx_list) -> list:
             for n in range(len(mtx_list)):
                 i=0
                 mtx_list[n][i], mtx_list[i][n]=mtx_list[i][n], mtx_list[n][i]     # swapping elements position aij=aji, where i, j= (3,1),(1,3),(2,3),(3,2)
@@ -112,15 +112,15 @@ class matrix:
                 print (elem,end=" ")
             print ()
         transpose(mtx_list)
-    def determin(mtx_list: list):
+    def determin(mtx_list: list) -> int:
         co11= mtx_list[1][1]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][1]     # cofactor of a11
         co12= mtx_list[1][0]*mtx_list[2][2]- mtx_list[1][2]*mtx_list[2][0]     # cofactor of a12
         co13= mtx_list[1][0]*mtx_list[2][1]- mtx_list[1][1]*mtx_list[2][0]     # cofactor of a13
         if len(mtx_list) ==2:
-            print (co11- co12)
+            return (co11- co12)
         else:
-            print (co11*mtx_list[0][0]- co12*mtx_list[0][1]+ co13*mtx_list[0][2])
-    def __init__():
+            return (co11*mtx_list[0][0]- co12*mtx_list[0][1]+ co13*mtx_list[0][2])
+    def __init__() -> str:
         return "This class is for making matrix in python "
 
 """
@@ -151,24 +151,24 @@ Used to calculate postfix equation
 """
 
 class notation:
-    def postfix(nota1: str):
+    def postfix(nota1: str) -> float:
         notalist=list(nota1)
         if len(notalist) == 3:
             if notalist[2] == "+":
                 sum= int(notalist[0])+ int(notalist[1])       # ab+ = a+b
-                print (sum)
+                return sum
             elif notalist[2] == "-":
                 sub= int(notalist[0])- int(notalist[1])       # ab- = a-b
-                print(sub)
+                return sub
             elif notalist [2] == "*":
                 mul= int(notalist[0])* int(notalist[1])       # ab* = a*b
-                print (mul)
+                return mul
             elif notalist [2] == "%":
                 Mod= int(notalist[0])% int(notalist[1])       # ab% = a%b
-                print(Mod)
+                return Mod
             else:
                 div= int(notalist[0])/ int(notalist[1])       # ab/ = a/b
-                print (div)
+                return div
         
         if len(notalist) == 5:
             if notalist[2] in list("+-*%/"):
@@ -197,7 +197,7 @@ class notation:
                     solution= solv / int(notalist[3])
                 else:
                     solution= solv % int(notalist[3])
-                print(solution)
+                return solution
             elif notalist[3] in list("+-*%/"):
                 """
                 equation for this is abc*/ = a/(b*c), you can use +-*/% operators 
@@ -223,10 +223,8 @@ class notation:
                     solution = int(notalist[0]) / solv 
                 else:
                     solution = int(notalist[0]) % solv 
-                print(solution)
-            else:
-                return "Please enter correct equation in abc*/ format or ab*c/, you can use */+-%"
-
+                return solution
+           
         if len(notalist) == 7:
             """
             equation for this is ab*cd*/ = (a*b)/(c*d), you can use +-*/% operators
@@ -266,26 +264,26 @@ class notation:
                 result= calc1 / calc2
             else:
                 result= calc1 % calc2
-            print(result)
+            return result
     
-    def prefix(nota1: str):
+    def prefix(nota1: str) -> float:
         notalist =list(nota1)
         if len(notalist) == 3:
             if notalist[0] == "+":
                 sum=int(notalist[1]) + int(notalist[2])      # +ab = a+b
-                print (sum)
+                return sum
             elif notalist[0] == "-":
                 sub= int(notalist[1])- int(notalist[2])      # -ab = a-b
-                print(sub)
+                return sub
             elif notalist[0] == "*":
                 mul= int(notalist[1])* int(notalist[2])      # *ab = a*b
-                print(mul)
+                return mul
             elif notalist[0] == "%":
                 Mod= int(notalist[1])% int(notalist[2])      # %ab = a%b
-                print(Mod)
+                return Mod
             else:
                 div= int(notalist[1])/ int(notalist[2])      # /ab = a/b
-                print(div)
+                return div
 
         if len(notalist) == 5:
             if notalist[1] in list("+-*%/"):
@@ -314,7 +312,7 @@ class notation:
                     solution= solv / int(notalist[4])
                 else:
                     solution= solv % int(notalist[4])
-                print(solution)
+                return solution
             elif notalist[2] in list("+-*%/"):
                 """
                 equation for this is /a*bc = a/(b*c), you can use +-*/% operators
@@ -340,10 +338,8 @@ class notation:
                     solution = int(notalist[1]) / solv
                 else:
                     solution = int(notalist[1]) % solv
-                print(solution)
-            else:
-                return "Please enter correct equation in abc*/ format or ab*c/, you can use */+-%"
-
+                return solution
+            
         if len(notalist)==7:
             """
             equation for this is /*ab*cd = (a*b)/(c*d), you can use +-*/% operators
@@ -383,4 +379,4 @@ class notation:
                 result= calc1 / calc2
             else:
                 result= calc1 % calc2
-            print(result)
+            return result
