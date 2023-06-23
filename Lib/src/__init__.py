@@ -23,7 +23,7 @@ __doc__= {
     "matrix.mat_trans": matrix.mat_trans, 
     "matrix.determin": matrix.determin, 
     "matrix.__init__": matrix.__init__, 
-    "notation": notation, 
+    "fibonacci": fibonacci, "notation": notation, 
     "notation.prefix": notation.prefix, 
     "notation.postfix": notation.postfix,
     "Cuboid": Cuboid, "Cube": Cube, 
