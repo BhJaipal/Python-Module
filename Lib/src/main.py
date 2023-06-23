@@ -380,3 +380,29 @@ class notation:
             else:
                 result= calc1 % calc2
             return result
+
+def fibonacci(n):
+    if (type(n) is not int): 
+        # if n is not an integer 
+        # you will get a TypeError 
+        raise TypeError("Value of n must be an Integer")
+    else:
+        # as in fibonacci series 0 and 1 values are 0 and 1
+        # formula of fibonacci series if f(n)= f(n-1) + f(n-2)
+        # so for f(2)= f(0)+f(1)= 0+1= 1
+        # so f(2)= f(1) = 1
+        if (n== 0): return 0;
+        elif (n == 1 or n == 2): return 1;
+        elif:
+            return (fibonacci(n-1) + fibonacci(n-2));
+"""
+fibonacci(4) will return fibonacci(3) + fibonacci(2)
+as fibonacci(3) will return fibonacci(2) + fibonacci(1) 
+as fibonacci(2) and fibonacci(1) = 1
+fibonacci(3)= 1+1= 2
+and fibonacci(4) = fibonacci(3)+ fibonacci(2)
+which is 2+1
+fibonacci(4)=3
+>>> fibonacci(4)
+3
+"""
