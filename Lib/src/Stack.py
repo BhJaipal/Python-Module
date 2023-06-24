@@ -1,4 +1,4 @@
 class Stack:
     def __init__(self):
-        self.l
+        self.lis
     def push(self, elem):
