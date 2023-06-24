@@ -21,4 +21,4 @@ class Stack:
     def printList(self):
         for i in self.list:
             print(i, end=" ")
-        print()
+        print("")
