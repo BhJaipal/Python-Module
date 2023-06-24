@@ -23,4 +23,4 @@ class Stack:
             print(i, end=" ")
         print("")
 
-ok= Stack()
+ok= Stack().
