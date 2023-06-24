@@ -14,7 +14,7 @@ class Stack:
     def popMany(self, n: int):
         popedElemList= []
         for i in range(n):
-            popedElemList.append(self.list.pop())
+            popedElemList.append(self.list.po))
         return popedElemList
     def length(self)-> int:
         return len(self.list)
