@@ -19,4 +19,4 @@ class Stack:
     def length(self)-> int:
         return len(self.list)
     def printList(self):
-        
+        for 
