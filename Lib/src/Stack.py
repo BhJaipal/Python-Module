@@ -7,4 +7,4 @@ class Stack:
         self.list.extend(args)
     def pop(self):
         if len(self.list) == 0:
-            print("Stack is empty, please fil")
+            print("Stack is empty, please fill ")
