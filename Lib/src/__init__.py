@@ -47,6 +47,6 @@ __doc__= {
     "Sphere.Volume": Sphere.Volume, 
     "Sphere.execution": Sphere.execution,
     "Stack": Stack, "Stack.pop": Stack.pop,
-    "Stack.popMany": Stack.popMany, "Stack.push": 
+    "Stack.popMany": Stack.popMany, "Stack.push": Stac
     "Stack.pushMany": Stack.pushMany
 }
