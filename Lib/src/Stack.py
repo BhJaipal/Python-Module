@@ -8,4 +8,4 @@ class Stack:
     def pop(self):
         if len(self.list) == 0:
             print("Stack is empty, please fill some elements first")
-            self.push(input("Enter element"))
+            self.push(input("Enter element: "))
