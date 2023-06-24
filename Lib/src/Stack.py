@@ -6,4 +6,4 @@ class Stack:
     def pushMany(self, *args):
         self.list.extend(args)
     def pop(self):
-        if len(self.list) 
+        if len(self.list) == 0
