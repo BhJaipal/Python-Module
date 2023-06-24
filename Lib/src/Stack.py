@@ -15,4 +15,4 @@ class Stack:
         popedElemList= []
         for i in range(n):
             popedElemList.append(self.list.pop())
-        
+        return 
