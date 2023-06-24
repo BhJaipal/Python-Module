@@ -17,7 +17,7 @@ class Stack:
         else:
             return self.list.pop()
     def popMany(self, n: int):
-        # removing last n elements of Stack from 
+        # removing last n elements of Stack from back
         popedElemList= []
         for i in range(n):
             popedElemList.append(self.pop())
