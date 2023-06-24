@@ -1,2 +1,2 @@
 class Stack:
-    def push(elem)
+    def push(self, elem)
