@@ -23,6 +23,7 @@ class Stack:
             popedElemList.append(self.pop())
         return popedElemList
     def length(self)-> int:
+        
         return len(self.list)
     def printList(self):
         for i in self.list:
