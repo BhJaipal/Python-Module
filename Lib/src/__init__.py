@@ -13,7 +13,7 @@ __name__= "Lib"
 _version="0.4.9"
 __doc__= {
     "__init__": __init__, 
-    "__name__":__name__(), 
+    "__name__":__name__, 
     "new":new, "new_math":new_math,
     "new_math.round":new_math.round,
     "new_math.cbrt": new_math.cbrt, 
