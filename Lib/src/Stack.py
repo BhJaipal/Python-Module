@@ -11,4 +11,9 @@ class Stack:
             self.push(input("Enter element: "))
         else:
             return self.list.pop()
-    def 
+    def name(one, two):
+        """
+        Purpose: one
+        """
+        
+    # end def
