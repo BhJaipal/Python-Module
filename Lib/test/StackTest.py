@@ -2,4 +2,4 @@ from Lib.Stack import *
 
 newStack= Stack()
 newStack.push(4)
-n
+newStac
