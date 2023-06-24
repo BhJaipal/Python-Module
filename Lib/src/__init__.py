@@ -45,5 +45,6 @@ __doc__= {
     "Cylinder.execution": Cylinder.execution, 
     "Sphere.SurfaceArea": Sphere.SurfaceArea, 
     "Sphere.Volume": Sphere.Volume, 
-    "Sphere.execution": Sphere.execution
+    "Sphere.execution": Sphere.execution,
+    
 }
