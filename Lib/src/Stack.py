@@ -23,3 +23,4 @@ class Stack:
             print(i, end=" ")
         print("")
 
+Stac
