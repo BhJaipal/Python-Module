@@ -16,7 +16,7 @@ class Stack:
         for i in range(n):
             try:
                 self.pop()
-            exce
+            except:
             popedElemList.append(self.pop())
         return popedElemList
     def length(self)-> int:
