@@ -10,4 +10,4 @@ class Stack:
             print("Stack is empty, please fill some elements first")
             self.push(input("Enter element: "))
         else:
-            self.list.pop
+            self.list.pop()
