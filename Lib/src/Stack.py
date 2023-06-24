@@ -7,8 +7,4 @@ class Stack:
         self.list.extend(args)
     def pop(self):
         if len(self.list) == 0:
-            raise txt = 'Hello, And Welcome To My World!'
-            
-            x = txt.index('e')
-            
-            print(x)Error
+            raise 
