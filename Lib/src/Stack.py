@@ -13,7 +13,7 @@ class Stack:
             print("Stack is empty, please fill some elements first")
             self.push(input("Enter element: "))
             self.pop()
-            # inserting a em
+            # inserting a e
         else:
             return self.list.pop()
     def popMany(self, n: int):
