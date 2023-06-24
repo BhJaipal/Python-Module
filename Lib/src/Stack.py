@@ -1,2 +1,2 @@
 class Stack:
-    def 
+    def pus
