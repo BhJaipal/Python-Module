@@ -23,7 +23,7 @@ class Stack:
             popedElemList.append(self.pop())
         return popedElemList
     def length(self)-> int:
-        # length of list
+        # length of S
         return len(self.list)
     def printList(self):
         # a good way to print Stack
