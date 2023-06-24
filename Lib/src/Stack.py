@@ -17,7 +17,7 @@ class Stack:
         else:
             return self.list.pop()
     def popMany(self, n: int):
-        
+        # 
         popedElemList= []
         for i in range(n):
             popedElemList.append(self.pop())
