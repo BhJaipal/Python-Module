@@ -3,3 +3,4 @@ class Stack:
         self.list= list()
     def push(self, elem):
         self.list.append(elem)
+    
