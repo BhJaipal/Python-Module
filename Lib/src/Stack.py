@@ -1,1 +1,2 @@
-class Stac
+class Stack:
+    
