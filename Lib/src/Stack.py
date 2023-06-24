@@ -12,4 +12,4 @@ class Stack:
         else:
             return self.list.pop()
     def popMany(self, n: int):
-        popedElemLis
+        popedElemList= 
