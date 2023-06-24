@@ -2,7 +2,7 @@ class Stack:
     def __init__(self, *args):
         self.list= list(args)
     def push(self, elem):
-        # pushing element to Stack
+        # pushing one  element to Stack
         self.list.append(elem)
     def pushMany(self, *args):
         self.list.extend(args)
