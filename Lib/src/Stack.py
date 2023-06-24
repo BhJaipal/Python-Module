@@ -20,4 +20,4 @@ class Stack:
         return len(self.list)
     def printList(self):
         for i in self.list:
-            print(i, )
+            print(i, en)
