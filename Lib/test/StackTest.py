@@ -1,3 +1,3 @@
 from Lib.Stack import *
 
-newStack= Stac
+newStack= Stack()
