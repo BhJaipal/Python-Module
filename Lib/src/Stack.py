@@ -26,6 +26,7 @@ class Stack:
         # length of list
         return len(self.list)
     def printList(self):
+        
         for i in self.list:
             print(i, end=" ")
         print()
