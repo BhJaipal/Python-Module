@@ -5,7 +5,7 @@ class Stack:
         # pushing one element to Stack
         self.list.append(elem)
     def pushMany(self, *args):
-        # pushing more than one elements to Sta
+        # pushing more than one elements to Stack
         self.list.extend(args)
     def pop(self):
         if len(self.list) == 0:
