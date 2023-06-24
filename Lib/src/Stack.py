@@ -8,5 +8,3 @@ class Stack:
     def pop(self):
         if len(self.list) == 0:
             raise IndexError("Stack is empty")
-        else:
-            
