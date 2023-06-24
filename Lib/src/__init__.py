@@ -46,5 +46,5 @@ __doc__= {
     "Sphere.SurfaceArea": Sphere.SurfaceArea, 
     "Sphere.Volume": Sphere.Volume, 
     "Sphere.execution": Sphere.execution,
-    "Stack": Stack, "Stack.pop": 
+    "Stack": Stack, "Stack.pop": Stack.
 }
