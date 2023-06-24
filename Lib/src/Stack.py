@@ -1,3 +1,3 @@
 class Stack:
-    def __
+    def __init__()
     def push(self, elem):
