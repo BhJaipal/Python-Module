@@ -17,4 +17,4 @@ class Stack:
             popedElemList.append(self.list.pop())
         return popedElemList
     def length(self)-> int:
-        return len(self.)
+        return len(self.list)
