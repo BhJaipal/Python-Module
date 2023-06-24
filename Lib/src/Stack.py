@@ -5,4 +5,4 @@ class Stack:
         self.list.append(elem)
     def pushMany(self, *args):
         self.list.extend(args)
-    def pop()
+    def pop(self)
