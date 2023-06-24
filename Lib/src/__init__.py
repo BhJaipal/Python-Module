@@ -50,5 +50,4 @@ __doc__= {
     "Stack.popMany": Stack.popMany, "Stack.push": Stack.push,
     "Stack.pushMany": Stack.pushMany, "Stack.length": Stack.length,
     ""
-
 }
