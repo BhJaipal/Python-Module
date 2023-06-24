@@ -22,4 +22,3 @@ class Stack:
         for i in self.list:
             print(i, end=" ")
         print("")
-    
