@@ -48,5 +48,5 @@ __doc__= {
     "Sphere.execution": Sphere.execution,
     "Stack": Stack, "Stack.pop": Stack.pop,
     "Stack.popMany": Stack.popMany,
-    "Stack "
+    "Stack."
 }
