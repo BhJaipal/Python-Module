@@ -1,1 +1,1 @@
-from Lib.Stack 
+from Lib.Stack import *
