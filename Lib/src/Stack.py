@@ -15,6 +15,7 @@ class Stack:
         popedElemList= []
         for i in range(n):
             try:
+                
             popedElemList.append(self.pop())
         return popedElemList
     def length(self)-> int:
