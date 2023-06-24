@@ -11,3 +11,4 @@ class Stack:
             self.push(input("Enter element: "))
         else:
             self.list.pop()
+            
