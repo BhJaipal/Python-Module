@@ -1,2 +1,2 @@
 class Stack:
-    def pus
+    def push()
