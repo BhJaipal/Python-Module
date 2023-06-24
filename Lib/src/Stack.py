@@ -4,4 +4,4 @@ class Stack:
     def push(self, elem):
         self.list.append(elem)
     def pushMany(self, *args):
-        self.list.extend(srgs )
+        self.list.extend(a)
