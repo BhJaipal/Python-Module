@@ -11,4 +11,4 @@ class Stack:
             self.push(input("Enter element: "))
         else:
             return self.list.pop()
-    def popMany(self, )
+    def popMany(self, n: )
