@@ -1,3 +1,3 @@
-from Lib.src.Stack import *
+from Lib.Stack import *
 
 newStack= Stack()
