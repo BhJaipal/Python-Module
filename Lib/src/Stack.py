@@ -33,4 +33,4 @@ class Stack:
     def search(self, element):
         for i in self.list:
             if i== element:
-                return self.list.index
+                return self.list.index()
