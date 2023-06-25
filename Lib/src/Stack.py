@@ -31,5 +31,5 @@ class Stack:
             print(i, end=" ")
         print()
     def search(self, element):
-        
+        for 
         return self.list.
