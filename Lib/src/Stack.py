@@ -40,4 +40,4 @@ class Stack:
                 continue
         if found== -1:
             return -1
-Stack(3, 5).
+Stack(3, 5).search
