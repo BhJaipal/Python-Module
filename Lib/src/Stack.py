@@ -37,4 +37,4 @@ class Stack:
                 return self.list.index(i)
             else:
                 continue
-        if 
+        if found 
