@@ -34,4 +34,4 @@ class Stack:
         for i in self.list:
             if i== element:
                 return self.list.index(i)
-            
+            els
