@@ -44,5 +44,5 @@ class Stack:
         else:
             return found
     def extend(self, elemList: list):
-        # enten
+        # entends 
         self.list.extend(elemList)
