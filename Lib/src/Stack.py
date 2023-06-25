@@ -43,5 +43,5 @@ class Stack:
         else:
             return found
     def extend(self, elemList: list):
-        self.extend
+        self.
 Stack(3, 5).search(4)
