@@ -40,5 +40,5 @@ class Stack:
                 continue
         if found== -1:
             return -1
-        else 
+        else"
 Stack(3, 5).search(4)
