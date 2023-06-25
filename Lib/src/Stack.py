@@ -40,4 +40,4 @@ class Stack:
                 continue
         if found== -1:
             return -1
-Stack()
+Stack(3, 3)
