@@ -34,7 +34,7 @@ class Stack:
         found = -1
         for i in self.list:
             if i== element:
-                
+                found 
                 return self.list.index(i)
             else:
                 continue
