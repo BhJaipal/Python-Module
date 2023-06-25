@@ -36,3 +36,4 @@ class Stack:
             if i== element:
                 return self.list.index(i)
             else:
+                
