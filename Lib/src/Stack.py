@@ -31,7 +31,7 @@ class Stack:
             print(i, end=" ")
         print()
     def search(self, element):
-        # searches for element, if not 
+        # searches for element, if not found 
         found = -1
         for i in self.list:
             if i== element:
