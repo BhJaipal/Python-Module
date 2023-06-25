@@ -38,3 +38,4 @@ class Stack:
             else:
                 continue
         if found== -1:
+            
