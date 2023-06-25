@@ -32,4 +32,4 @@ class Stack:
         print()
     def search(self, element):
         for i in self.list:
-            if i== element
+            if i== element:
