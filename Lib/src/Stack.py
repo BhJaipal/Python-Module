@@ -33,3 +33,4 @@ class Stack:
     def search(self, element):
         for i in self.list:
             if i== element:
+                
