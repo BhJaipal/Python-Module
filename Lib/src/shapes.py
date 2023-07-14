@@ -18,7 +18,7 @@ class Cuboid:
         print(f"Volume: {self.Volume()}");
         print(f"length of Diagonal: {self.lengthofDiagonal()}");
 
-class Cube():
+class Cube:
     def __init__(self, side: float):
         self.side= side;
     def TotalSurfaceArea(self):
