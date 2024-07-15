@@ -171,7 +171,9 @@ cuboid: Cuboid = Cuboid(len, brea, hei);
 
 it returns Total Surface area of Cuboid which is 
 
+```latex
 $$2×(l×b + l×h + h×b)\$$
+```
 
 ```python
 print(cuboid.TotalSurfaceArea())
