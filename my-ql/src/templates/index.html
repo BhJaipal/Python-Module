@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MyQL UI</title>
+		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+		<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+		<link
+			rel="shortcut icon"
+			href="{{ url_for('static', filename='images/ql.png') }}"
+			type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='styles/style.css') }}" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<nav>
+			<img
+				src="{{ url_for('static', filename='images/ql.png') }}"
+				id="logo" />
+			<div>MyQL UI</div>
+		</nav>
+		<main>
+			<div class="opts">
+				<a href="/schema">
+					<button id="schema" class="opt material-icons">
+						schema
+					</button>
+				</a>
+			</div>
+			<section id="ql-editor-grid">
+				<div>
+					<textarea type="text" id="actual-editor"></textarea>
+					<div id="ql-editor"></div>
+				</div>
+				<div disabled></div>
+			</section>
+		</main>
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	height: 100vh;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	color: white;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#logo {
+	width: auto;
+	height: 10vh;
+}
+nav {
+	width: 100%;
+	height: 10vh;
+	font-size: 6vh;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	background-color: rgb(26, 2, 49);
+}
+nav div {
+	margin: 5px;
+}
+img {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#ql-editor-grid {
+	height: 90vh;
+	align-content: space-between;
+	width: 100%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 20px;
+	background-color: rgb(42, 11, 83);
+}
+#ql-editor-grid div:first-child {
+	margin-right: 5px;
+	display: flex;
+	flex-direction: column;
+}
+#actual-editor {
+	height: 20vh;
+	animation: cur-anime 1s infinite;
+}
+@keyframes cur-anime {
+	0% {
+		caret-color: white;
+	}
+	50% {
+		caret-color: transparent;
+	}
+	100% {
+		caret-color: white;
+	}
+}
+#ql-editor-grid div:last-child {
+	margin-left: 5px;
+}
+#ql-editor-grid div {
+	resize: none;
+	font-family: "Fira Code";
+	color: white;
+	border: 0px;
+	font-size: larger;
+	padding-top: 10px;
+	background-color: rgb(5, 35, 49);
+	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 90vh;
+}
+#actual-editor {
+	background-color: rgb(5, 35, 49);
+}
+.opts {
+	height: 90vh;
+	width: 70px;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+.opt {
+	background-color: whitesmoke;
+	cursor: pointer;
+	color: black;
+	border: 4px solid black;
+	border-radius: 15px;
+	width: 100%;
+	height: 50px;
+	font-size: 10vh;
+}
+main {
+	display: flex;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	flex-direction: row;
+}
+.ql-comment {
+	color: grey;
+}
+.ql-text {
+	color: skyblue;
+}
+.ql-keyword {
+	color: rgb(253, 128, 128);
+}
+.ql-sym {
+	color: yellow;
+	border: 1px solid white;
+	animation: border-anime 1s infinite;
+}
+.ql-variable {
+	color: #c39ef3;
+}
+.ql-err {
+	color: #c39ef3;
+	text-decoration: underline red;
+}
+@keyframes border-anime {
+	0% {
+		border: 0.3px solid transparent;
+	}
+	50% {
+		border: 0.3px solid white;
+	}
+	100% {
+		border: 0.3px solid transparent;
+	}
+}
+#actual-editor {
+	background-color: rgb(28, 27, 29);
+	color: white;
+	border: none;
+	outline: none;
+}
+#actual-editor:active {
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
