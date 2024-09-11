@@ -5,7 +5,7 @@ document.getElementById("ql-editor").onfocus = () => {
 document.getElementById("ql-editor").onkeydown = () => {
 	document.getElementById("actual-editor").focus();
 }
-let waitingNode = [];
+let variableNode = [];
 /**
  * @param {KeyboardEvent} e
  */
@@ -21,14 +21,19 @@ document.getElementById("actual-editor").onkeydown = (e) => {
 	}
 	document.getElementById("ql-editor").innerHTML =
 		highlightQuery(document.getElementById("actual-editor").value);
-	waitingNode.forEach(el => {
-		document.getElementsByClassName("ql-variable")[el.key].setAttribute("title", el.title);
+	variableNode.forEach(el => {
+		let variableDesc = `<span class="var-title">${el.title}</span>`
+		let variable = document.createElement("p");
+		variable.classList.add("variable-desc");
+		variable.innerHTML = variableDesc;
+		document.getElementsByClassName("ql-variable")[el.key].appendChild(variable);
 	})
 };
 /**
  * @param {String} query MyQL query
  */
 function highlightQuery(query) {
+	variableNode = [];
 	let varMatch = query.match(/^\$([a-z]|[A-Z])+:\s?([a-z]|[A-Z])+$/g);
 	if (varMatch) {
 		varMatch = query.match(/^\$([a-z]|[A-Z])+:\s?([a-z]|[A-Z])+$/g);
@@ -51,7 +56,7 @@ function highlightQuery(query) {
 			data.Query.properties.map((el, i) => {
 				if (el.name == rem.match(/([a-z]|[A-Z])+/)[0]) {
 					query = query.replace(rem, `<span class="ql-variable">${rem}</span>`);
-					waitingNode.push({ key: i, title: el.type.name });
+					variableNode.push({ key: i, title: el.type.name });
 				}
 			})
 	}
