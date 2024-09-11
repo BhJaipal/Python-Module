@@ -22,11 +22,12 @@ document.getElementById("actual-editor").onkeydown = (e) => {
 	document.getElementById("ql-editor").innerHTML =
 		highlightQuery(document.getElementById("actual-editor").value);
 	variableNode.forEach(el => {
-		let variableDesc = `<span class="var-title">${el.title}</span>`
-		let variable = document.createElement("p");
+		let variable = document.createElement("span");
 		variable.classList.add("variable-desc");
-		variable.innerHTML = variableDesc;
+		variable.innerHTML = el.title;
+
 		document.getElementsByClassName("ql-variable")[el.key].appendChild(variable);
+		document.getElementsByClassName("ql-variable")[el.key].setAttribute("data-key", el.key);
 	})
 };
 /**
@@ -48,17 +49,36 @@ function highlightQuery(query) {
 		let other = query.slice(query.indexOf("query") + 5);
 		if (!other.match(/[a-z]|[A-Z]/)) return;
 
-		let rem = other.trim().slice(1).trim().match(/([a-z]|[A-Z])+/)[0];
+		let rem = other.trim().slice(1).trim().match(/([a-z]|[A-Z])+/g);
 
-		if (!data.Query.properties.map(el => el.name == rem.match(/([a-z]|[A-Z])+/)[0]).includes(true))
+		if (!data.Query.properties.map(el => el.name == rem[0].match(/([a-z]|[A-Z])+/)[0]).includes(true))
 			query = query.replace(rem, `<span class="ql-err" title="Error: No such query: ${rem}">${rem}</span>`);
-		else
+		else {
 			data.Query.properties.map((el, i) => {
-				if (el.name == rem.match(/([a-z]|[A-Z])+/)[0]) {
-					query = query.replace(rem, `<span class="ql-variable">${rem}</span>`);
+				if (el.name == rem[0].match(/([a-z]|[A-Z])+/)[0]) {
+					query = query.replace(el.name, `<span class="ql-variable">${el.name}</span>`);
 					variableNode.push({ key: i, title: el.type.name });
+					if (rem.slice(1).length > 0) {
+						for (let i = 0; i < rem.slice(1).length; i++) {
+							const element = rem.slice(1)[i];
+							if (typeof el.type == "object") {
+								let isFoundName = false;
+								el.type.properties.map((el2, i) => {
+									if (el2.name == element) {
+										query = query.replace(element, `<span class="ql-variable">${element}</span>`);
+										variableNode.push({ key: i + 1, title: el2.type });
+										isFoundName = true;
+									}
+								})
+								if (!isFoundName) {
+									query = query.replace(element, `<span class="ql-err" title="Error: No such variable: ${element}">${element}</span>`);
+								}
+							}
+						}
+					}
 				}
-			})
+			});
+		}
 	}
 	query = query.replace(/\n/g, '<br />');
 
@@ -84,7 +104,6 @@ function highlightQuery(query) {
 
 	if (symMatch) {
 		symMatch.forEach((sym) => {
-			console.log(sym.charCodeAt(0));
 
 			let spaceCount = sym.length - 1;
 			let space = " ".repeat(spaceCount)
@@ -95,7 +114,8 @@ function highlightQuery(query) {
 	return query;
 }
 /**
- * @typedef {"null" | {name: String, type: String, additional: "null" | QlType }} QlType
+ * @typedef {{name: String, type: String, additional: "null" | String}} QlProperty
+ * @typedef {"null" | {name: String, properties: QlProperty[], additional: "null" | QlType }} QlType
  * @type { {Query: {properties: {name:String, parameters: QlType[], type: QlType}[]}, Mutation: {properties: {name:String, parameters: QlType[], type: QlType}[]}} }
  */
 let data;
