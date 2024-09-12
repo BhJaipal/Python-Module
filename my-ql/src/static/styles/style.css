@@ -177,3 +177,7 @@ main {
 #send-data:disabled {
 	background-color: rgb(2, 114, 189);
 }
+#app {
+	padding: 0px;
+	margin: 0px;
+}

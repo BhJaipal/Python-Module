@@ -21,31 +21,37 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
 			rel="stylesheet" />
+		<script
+			src="{{ url_for('static', filename='js/vue.global.prod.js') }}"></script>
 	</head>
 	<body>
-		<nav>
-			<img
-				src="{{ url_for('static', filename='images/ql.png') }}"
-				id="logo" />
-			<div>MyQL UI</div>
-		</nav>
-		<button id="send-data" class="material-icons">send</button>
-		<main>
-			<div class="opts">
-				<a href="/schema">
-					<button id="schema" class="opt material-icons">
-						schema
-					</button>
-				</a>
-			</div>
-			<section id="ql-editor-grid">
-				<div>
-					<textarea type="text" id="actual-editor"></textarea>
-					<div id="ql-editor"></div>
+		<div id="app">
+			<nav>
+				<img
+					src="{{ url_for('static', filename='images/ql.png') }}"
+					id="logo" />
+				<div>MyQL UI</div>
+			</nav>
+			<button id="send-data" class="material-icons"
+				@click="sendData" v-html="icon"></button>
+			<main>
+				<div class="opts">
+					<a href="/schema">
+						<button id="schema" class="opt material-icons">
+							schema
+						</button>
+					</a>
 				</div>
-				<div disabled></div>
-			</section>
-		</main>
+				<section id="ql-editor-grid">
+					<div>
+						<textarea type="text" id="actual-editor" v-model="queryInput"
+							@keydown="onkd"></textarea>
+						<pre id="ql-editor" class="language-graphql" v-html="htmlOut"></pre>
+					</div>
+					<div disabled></div>
+				</section>
+			</main>
+		</div>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</body>
 </html>
