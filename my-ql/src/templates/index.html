@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MyQL UI</title>
 		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css" />
 		<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 		<link
 			rel="shortcut icon"
@@ -32,8 +35,12 @@
 					id="logo" />
 				<div>MyQL UI</div>
 			</nav>
-			<button id="send-data" class="material-icons"
-				@click="sendData" v-html="icon"></button>
+			<button
+				id="send-data"
+				class="material-icons"
+				v-html="icon"
+				@click="sendData">
+			</button>
 			<main>
 				<div class="opts">
 					<a href="/schema">
@@ -43,12 +50,15 @@
 					</a>
 				</div>
 				<section id="ql-editor-grid">
-					<div>
-						<textarea type="text" id="actual-editor" v-model="queryInput"
+					<div id="ql-editor-box">
+						<textarea
+							type="text"
+							id="actual-editor"
+							v-model="queryInput"
 							@keydown="onkd"></textarea>
-						<pre id="ql-editor" class="language-graphql" v-html="htmlOut"></pre>
+						<pre id="ql-editor" v-html="htmlOut"></pre>
 					</div>
-					<div disabled></div>
+					<div></div>
 				</section>
 			</main>
 		</div>
